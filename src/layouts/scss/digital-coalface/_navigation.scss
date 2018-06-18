@@ -1,0 +1,98 @@
+/*===============================================
+Navigation
+===============================================*/
+
+.primary-nav {
+  display: none;
+  width: 100%;
+    @include media(medium) {
+      display: inline-block;
+      position: relative;
+      float: right;
+      width: auto;
+      margin-left: 0;
+    }
+  ul {
+    list-style: none;
+     li {
+       display: inline-block;
+       padding: 0 25px;
+       &:last-of-type {
+         padding-right: 0;
+       }
+          a {
+            color: $black;
+            font-weight: $headline;
+            text-decoration: none;
+            &:hover {
+              color: $green;
+            }
+          }
+     }
+  }
+}
+
+
+.mobile-menu-toggle {
+  float: right;
+  margin-top: 5px;
+  display: inline-flex;
+    @include media(medium) {
+    margin-top: 10px;
+    display: none;
+  }
+  .menu-open {
+    display: inline-block;
+  }
+  .icon-close-menu {
+    display: none;
+  }
+}
+
+  .mobile-menu-toggle.is--active {
+    .icon-burger-menu {
+      display: none;
+    }
+    .icon-close-menu {
+      display: inline-block;
+    }
+  }
+
+.menu-open,  .icon-close-menu {
+  height: 31px;
+  width: 33px;
+}
+
+.mobile-menu-toggle.is--active {
+  .icon-burger-menu {
+    display: none;
+  }
+  .icon-close-menu {
+    display: inline-block;
+  }
+}
+
+.primary-nav.is--open {
+  display: block;
+  position: relative;
+  margin-left: 0;
+  margin-top: 87px;
+  transition: all, 0.25s, ease-in-out;
+    ul {
+      padding-left: 0;
+      li {
+          display: block;
+          padding-bottom: 15px;
+          padding-left: 0;
+            @include media(medium) {
+              display: inline-block;
+              padding-bottom: 25px;
+              padding-left: 25px;
+            }
+      }
+    }
+    @include media(medium) {
+    height: auto;
+    margin-top: 0;
+ }
+}

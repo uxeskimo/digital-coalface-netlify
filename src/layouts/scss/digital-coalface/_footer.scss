@@ -1,0 +1,26 @@
+// Layout styles
+
+footer {
+	margin-top: 0;
+	padding-top: $quarter-spacing-unit;
+	padding-bottom: $base-spacing-unit;
+	h3 {
+		color: $white;
+	}
+	ul {
+		padding-left: 0;
+		list-style: none;
+		li {
+			margin-bottom: $quarter-spacing-unit
+		}
+	}
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+	p {
+		color: $white;
+	}
+
+}
+

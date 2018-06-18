@@ -1,0 +1,23 @@
+// Colours and variables:
+@import 'scss/variables';
+@import 'scss/colours';
+
+// Reset
+@import 'scss/normalize';
+
+// Core
+@import 'scss/global';
+@import 'scss/grid';
+@import 'scss/functions';
+@import 'scss/responsive';
+@import 'scss/typography';
+@import 'scss/accessibility';
+@import 'scss/no-js';
+
+//Digital Coalface
+@import 'scss/digital-coalface/layout';
+@import 'scss/digital-coalface/header';
+@import 'scss/digital-coalface/navigation';
+@import 'scss/digital-coalface/buttons';
+@import 'scss/digital-coalface/footer';
+@import 'scss/digital-coalface/home';

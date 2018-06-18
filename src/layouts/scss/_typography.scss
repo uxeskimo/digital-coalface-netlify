@@ -1,0 +1,48 @@
+/*===============================================
+Typography
+===============================================*/
+
+body {
+    font-family: $source-sans;
+    font-style: normal;
+    font-weight: $regular;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  color: $blue;
+  font-weight: $headline;
+  font-style: normal;
+  font-size: 23px;
+    @include media(large) {
+       
+    }
+}
+
+h2 {
+    color: $blue;
+    font-weight: $headline;
+    font-size: 20px;
+      @include media(large) {
+     
+      }
+}
+
+h3 {
+  color: $blue;
+  font-weight: $headline;
+  font-size: 18px;
+    @include media(large) {
+    
+  }
+}
+
+p {
+  color: $blue;
+  font-family: $source-sans;
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.45;
+}
