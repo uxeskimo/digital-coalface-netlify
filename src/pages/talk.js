@@ -20,16 +20,12 @@ const About = ({ data }) => (
 
             <p>Please fill in the form to get in touch, alternatively send me an emai to uxeskimo@gmail.com</p>
 
-            <form
-              name="talk-form"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field" >
-               <label>Your Name: <input type="text" name="name" /></label>
+            <form name="talk-form" method="POST" netlify>
+              <label>Your Name: <input type="text" name="name" /></label>
               <label>Your Email: <input type="email" name="email" />
               </label>
               <label>What would you like to talk about? <textarea name="message"></textarea></label>
-              <button className="btn" type="submit">Send</button>
+              <button type="submit">Send</button>
             </form>
 
 
