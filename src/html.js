@@ -47,6 +47,18 @@ module.exports = class HTML extends React.Component {
                 `
             }}
         />
+
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+            var el = document.querySelector('.primary-trigger');
+
+            el.onclick = function() {
+          el.classList.toggle('active');
+            }
+        `,
+  }}
+/>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}

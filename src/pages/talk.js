@@ -25,14 +25,11 @@ const About = ({ data }) => (
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field" >
-
-              <label for="full-name">Full name</label>
-              <input type="text" name="full-name" id="full-name"/>
-              <label forfull-name="" className="">Email</label>
-              <input name="email" type="email" />
-              <label for="message">What would you like to talk about?</label>
-              <textarea name="message" />
-              <button className="btn">Send</button>
+               <label>Your Name: <input type="text" name="name" /></label>
+              <label>Your Email: <input type="email" name="email" />
+              </label>
+              <label>What would you like to talk about? <textarea name="message"></textarea></label>
+              <button className="btn" type="submit">Send</button>
             </form>
 
 
