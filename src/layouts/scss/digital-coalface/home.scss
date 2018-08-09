@@ -1,5 +1,31 @@
 // Home page styles
 
+header {
+	padding-right: $quarter-spacing-unit;
+	padding-left: $quarter-spacing-unit;
+
+	   @include media(large) {
+	   	padding-right: $half-spacing-unit;
+		padding-left: $half-spacing-unit;
+	   }
+
+  .top-content {
+	display: flex;
+	justify-content: space-between;
+  }
+}
+
 h3 a {
 	text-decoration: none;
+}
+
+.hero {
+	margin: 48px 0 $half-spacing-unit 0;
+	 @include media(large) {
+	 	margin-top: 70px;
+	 }
+}
+
+.home {
+	margin-bottom: 0;
 }

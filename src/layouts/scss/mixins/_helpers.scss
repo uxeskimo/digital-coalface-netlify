@@ -1,32 +1,6 @@
 /*===============================================
 Helpers mixins
 ===============================================*/
-
-/**
- * Clearfix
- */
-@mixin clearfix {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-
-  &:after {
-    clear: both;
-  }
-}
-
-/**
- * Add styles for IE browsers
- * @param  {int} $version: 8  Max IE version targetted
- */
-@mixin ie($version: 8) {
-  @if $ie <= $version {
-    @content;
-  }
-}
-
 /**
  * Wraps the content into a media query. Requires $breakpoints map to be set.
  * For IE version less than or equal to 8 (which do not support media
@@ -49,58 +23,4 @@ Helpers mixins
       }
     }
   }
-}
-
-
-
-
-/**
- * Hide content visually (available to screen readers)
- */
-@mixin visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-  opacity: 0;
-  letter-spacing: 0;
-}
-
-/**
- * Un-hide content
- */
-@mixin visuallyshown {
-  clip: auto;
-  height: auto;
-  overflow: visible;
-  position: static;
-  width: auto;
-  opacity: 1;
-  letter-spacing: inherit;
-}
-
-/**
- * Clear classes
- */
-@mixin clear {
-  clear: both;
-}
-
-@mixin clear-left {
-  clear: left;
-}
-
-@mixin clear-right {
-  clear: right;
-}
-
-@mixin clear-none {
-  clear: none;
-}
-
-.clearfix {
-  @include clearfix;
 }

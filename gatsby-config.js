@@ -5,6 +5,7 @@ module.exports = {
     title: "The Digital Coalface",
     desc: "Getting to the heart of digital"
   },
+  pathPrefix: "/gatsby",
   plugins: [
     {
       resolve: "gatsby-source-contentful",
@@ -28,13 +29,6 @@ module.exports = {
       options: {
         name: "img",
         path: `${__dirname}/src/images`
-      }
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "img",
-        path: `${__dirname}/static/assets`
       }
     },
     "gatsby-transformer-sharp",

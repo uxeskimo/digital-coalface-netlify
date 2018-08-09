@@ -7,12 +7,12 @@
 
 // Core
 @import 'scss/global';
-@import 'scss/grid';
 @import 'scss/functions';
 @import 'scss/responsive';
 @import 'scss/typography';
 @import 'scss/accessibility';
 @import 'scss/no-js';
+@import 'scss/forms';
 
 //Digital Coalface
 @import 'scss/digital-coalface/layout';
@@ -21,3 +21,4 @@
 @import 'scss/digital-coalface/buttons';
 @import 'scss/digital-coalface/footer';
 @import 'scss/digital-coalface/home';
+@import 'scss/digital-coalface/common';

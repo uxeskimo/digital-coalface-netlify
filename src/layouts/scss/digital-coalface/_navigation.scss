@@ -4,25 +4,34 @@ Navigation
 
 .primary-nav {
   display: none;
-  width: 100%;
+
     @include media(medium) {
-      display: inline-block;
-      position: relative;
-      float: right;
-      width: auto;
-      margin-left: 0;
+      display: flex;
+      margin-top: 5px;
+    }
+     @include media(large) {
+      margin-top: 24px;
+    }
+     @include media(xlarge) {
+      font-size: 18px;
     }
   ul {
-    list-style: none;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0;
+      list-style: none;
      li {
-       display: inline-block;
-       padding: 0 25px;
+       padding-right: 21px;
+
+        @include media(large) {
+           padding-right: $base-spacing-unit;
+         }
+
        &:last-of-type {
          padding-right: 0;
        }
           a {
-            color: $black;
-            font-weight: $headline;
+            color: $blue;
             text-decoration: none;
             &:hover {
               color: $green;
@@ -34,15 +43,12 @@ Navigation
 
 
 .mobile-menu-toggle {
-  float: right;
-  margin-top: 5px;
-  display: inline-flex;
+   margin-top: 22px;
     @include media(medium) {
-    margin-top: 10px;
-    display: none;
+      display: none;
   }
   .menu-open {
-    display: inline-block;
+    display: flex;
   }
   .icon-close-menu {
     display: none;
@@ -54,7 +60,7 @@ Navigation
       display: none;
     }
     .icon-close-menu {
-      display: inline-block;
+      display: flex;
     }
   }
 

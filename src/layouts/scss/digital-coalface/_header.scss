@@ -1,6 +1,18 @@
 // Header styles
 
-.logo {
-	float: left;
-} 
+header {
 
+	.logo {
+    	margin-top: 16px;
+    	  img {
+      		 width: 117px;
+    	   }
+	   @include media(large) {
+	   	margin-top: $half-spacing-unit;
+	   	   img {
+      		 width: 155px;
+    		}
+	   }
+	}
+
+}

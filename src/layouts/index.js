@@ -2,30 +2,26 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
-import Header from "../components/Header/home-header.js";
+import DefaultHeader from "../components/Header";
 import "./main.scss";
 
-const TemplateWrapper = ({ children, data, location }) => (
+const PageWrapper = ({ children, data, location }) => (
   <div className="main-wrap">
-    <Helmet
-      title="The Digital Coalface"
-      meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" }
-      ]}
-    />
-    <Header data={data} location={location} />
-    <div className="container"> 
-      {children()}
-    </div>
+    <Helmet title="The Digital Coalface"
+            meta={[ { name: "description", content: "Sample" },
+                    { name: "keywords", content: "sample, something" }
+    ]}/>
+       
+    {children()}
+  
   </div>
 );
 
-TemplateWrapper.propTypes = {
+PageWrapper.propTypes = {
   children: PropTypes.func
 };
 
-export default TemplateWrapper;
+export default PageWrapper;
 
 export const query = graphql`
   query LayoutQuery {
@@ -33,11 +29,6 @@ export const query = graphql`
       siteMetadata {
         title
         desc
-      }
-    }
-    background: imageSharp(id: { regex: "/bg.jpeg/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
       }
     }
   }

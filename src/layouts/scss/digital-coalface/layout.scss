@@ -1,8 +1,31 @@
 // Layout styles
 
+.main-wrap {
+	min-height: 100vh;
+}
+
+.wrap {
+	max-width: 1300px;
+	margin: auto;
+}
+
 main {
-	background-color: #102e4b;	
-	margin-top: 0;
+	padding-right: $quarter-spacing-unit;
+	padding-left: $quarter-spacing-unit;
+	margin-bottom: $base-spacing-unit;
+
+
+	  @include media(large) {
+	   	padding-right: $half-spacing-unit;
+		padding-left: $half-spacing-unit;
+	   }
+
+	   .main-content {
+		  display: flex;
+		  flex-direction: column;
+		  padding-top: $half-spacing-unit;
+	   }
+
 	h2 {
 		color: $white;
 	}
@@ -10,7 +33,7 @@ main {
 		color: $white;
 	}
 	p {
-		color: $white;
+		color: $blue;
 	}
 }
 

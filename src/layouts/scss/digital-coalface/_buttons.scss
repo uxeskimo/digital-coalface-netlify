@@ -10,7 +10,14 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	border: none;
-} 
+	@include media(medium) {
+	   width: 50%;
+	}
+
+	@include media(large) {
+	   width: 35%;
+	}
+}
 
 
 

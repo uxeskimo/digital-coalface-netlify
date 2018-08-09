@@ -4,80 +4,52 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import Img from "gatsby-image";
 
-import logo from "../../images/logo.svg";
+import logo from "../../images/dc-logo.svg";
 import menu from "../../images/mobile-menu.svg";
+import hero from "../../images/video-pic.png";
 
 const HeaderWrapper = styled.div`
   overflow: hidden;
   position: relative;
-  height: ${({ isHome }) => (isHome ? "70vh" : "20vh")};
-  h1 {
-    img {
-      
-    }
+  padding-bottom: 32px;
+  p {
+    margin-bottom: 0;
   }
 `;
 
 const HeaderContainer = styled.div`
-
+    padding-top: 8px;
 `;
 
-export default class Header extends Component {
-  componentDidUpdate = (prevProps, prevState) => {
-    const { location } = this.props;
-    if (location.pathname !== prevProps.location.pathname) {
-      if (this.props.location.pathname === "/") {
-        this.wrapper.animate([{ height: "20vh" }, { height: "70vh" }], {
-          duration: 300,
-          fill: "forwards",
-          easing: "cubic-bezier(0.86, 0, 0.07, 1)",
-          iterations: 1
-        });
-      } else {
-        this.wrapper.animate([{ height: "70vh" }, { height: "20vh" }], {
-          duration: 300,
-          fill: "forwards",
-          easing: "cubic-bezier(0.86, 0, 0.07, 1)",
-          iterations: 1
-        });
-      }
-    }
-  };
 
+export default class Header extends Component {
   render() {
-    const { data, location } = this.props;
     return (
-      <HeaderWrapper
-        isHome={location.pathname === "/"}
-        ref={wrapper => (this.wrapper = ReactDOM.findDOMNode(wrapper))}
-      >
-        <HeaderContainer>
+      <HeaderWrapper>
+        <header>
           <div className="wrap">
-            <div className="row">
-              <div className="column">
-                <h1 className="logo">
+            <div className="top-content">
+
+                <div className="logo">
                   <Link to="/">
                     <img src={logo} alt="Digital Coalface Logo" />
                   </Link>
-                </h1> 
+                </div>
             <Link to="/" id="primary-trigger" className="mobile-menu-toggle">
                <img src={menu} alt="Menu" />
-            </Link> 
+            </Link>
 
             <nav className="primary-nav">
-              <ul>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-              </ul>
+               <ul>
+                  <li><Link to="/podcasts">Podcasts</Link></li>
+                  <li><Link to="/about">About</Link></li>
+                  <li><Link to="/talk">Talk on the digital coalface</Link></li>
+               </ul>
             </nav>
-       
-            </div> 
-          </div>
-
+            </div>
          </div>
-        </HeaderContainer>
-          
+        </header>
+
       </HeaderWrapper>
     );
   }

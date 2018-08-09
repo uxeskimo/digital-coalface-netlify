@@ -1,24 +1,25 @@
 import React, { Component } from "react";
 
-import Header from "../components/Header";
+import DefaultHeader from "../components/Header";
+import Footer from "../components/Footer/simple-footer.js";
 
 export default class PostPage extends Component {
   render() {
     const { data } = this.props;
     if (!data) return null;
     return (
-      <div className="wrap">
-        <div className="row">
-          <div className="column">
-            <span>{data.contentfulBlogPost.date}</span>
-            <h1>{data.contentfulBlogPost.title}</h1>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: data.contentfulBlogPost.body.childMarkdownRemark.html
-              }}
-            />
-          </div>
-        </div>
+    <div>
+      <DefaultHeader data={data} />
+      <main>
+        <div className="wrap">
+          <span>{data.contentfulBlogPost.date}</span>
+          <h1>{data.contentfulBlogPost.title}</h1>
+          <div dangerouslySetInnerHTML={{
+                  __html: data.contentfulBlogPost.body.childMarkdownRemark.html
+            }} />
+            </div>
+      </main>
+       <Footer data={data} />
       </div>
     );
   }

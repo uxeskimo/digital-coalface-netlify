@@ -2,6 +2,10 @@
 Typography
 ===============================================*/
 
+.wf-loading {
+   visibility: hidden;
+}
+
 body {
     font-family: $source-sans;
     font-style: normal;
@@ -11,21 +15,32 @@ body {
 }
 
 h1 {
+  margin-top: 40px;
   color: $blue;
   font-weight: $headline;
   font-style: normal;
   font-size: 23px;
+  line-height: 28px;
+   @include media(medium) {
+    margin-top: 48px;
+       font-size: 40px;
+       line-height: 44px;
+    }
     @include media(large) {
-       
+       margin-top: 86px;
+       margin-bottom: 8px;
+       font-size: 48px;
+       width: 60%;
+       line-height: 59px;
     }
 }
 
 h2 {
     color: $blue;
     font-weight: $headline;
-    font-size: 20px;
+    font-size: 22px;
       @include media(large) {
-     
+
       }
 }
 
@@ -34,15 +49,22 @@ h3 {
   font-weight: $headline;
   font-size: 18px;
     @include media(large) {
-    
+
   }
 }
 
 p {
   color: $blue;
   font-family: $source-sans;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 1.45;
+     @include media(large) {
+      font-size: 18px;
+     }
+}
+
+strong {
+    font-weight: $headline;
 }

@@ -1,10 +1,25 @@
 // Layout styles
 
 footer {
+	background-color: $blue;
 	margin-top: 0;
-	padding-top: $quarter-spacing-unit;
-	padding-bottom: $base-spacing-unit;
-	h3 {
+	padding: $quarter-spacing-unit $quarter-spacing-unit $base-spacing-unit $quarter-spacing-unit;
+
+	@include media(large) {
+	   padding-right: $half-spacing-unit;
+	   padding-left: $half-spacing-unit;
+	}
+
+	.footer-content {
+	   display: flex;
+	   flex-direction: column;
+	}
+
+	.btn {
+		margin-bottom: 48px;
+	}
+
+	h2, h3 {
 		color: $white;
 	}
 	ul {
@@ -21,6 +36,4 @@ footer {
 	p {
 		color: $white;
 	}
-
 }
-
