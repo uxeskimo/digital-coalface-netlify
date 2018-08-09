@@ -18,15 +18,41 @@ const About = ({ data }) => (
 
             <h1>Talk on the podcast</h1>
 
-            <p>Please fill in the form to get in touch, alternatively send me an emai to uxeskimo@gmail.com</p>
-
-            <form name="talk-form" method="POST" action="/index.html" netlify>
-              <label>Your Name: <input type="text" name="name" /></label>
-              <label>Your Email: <input type="email" name="email" />
-              </label>
-              <label>What would you like to talk about? <textarea name="message"></textarea></label>
-              <button type="submit">Send</button>
-            </form>
+           <form
+          name="talk-form"
+          method="post"
+          action="/index.html"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out: <input name="bot-field" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your name:<br />
+              <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your email:<br />
+              <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message:<br />
+              <textarea name="message" />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
 
 
             </div>
