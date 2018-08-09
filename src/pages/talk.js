@@ -25,6 +25,7 @@ const About = ({ data }) => (
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field" >
+              <input type="hidden">
               <label for="full-name">Full name</label>
               <input type="text" name="full-name" id="full-name"/>
               <label forfull-name="" className="">Email</label>
