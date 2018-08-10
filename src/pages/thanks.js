@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer/simple-footer.js";
 
-const About = ({ data }) => (
+const Thanks = ({ data }) => (
   <div>
   <Header data={data} />
   <main>
@@ -17,6 +17,8 @@ const About = ({ data }) => (
             <div className="column">
 
             <h1>Talk on the podcast</h1>
+
+            <p>Your request to talk on the podcast has been sent, thanks for taking the time to do that. I'll be in touch soon, Lee.</p>
 
             <div className="row">
 
@@ -66,4 +68,4 @@ const About = ({ data }) => (
   </div>
 );
 
-export default About;
+export default Thanks;

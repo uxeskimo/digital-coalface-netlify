@@ -2,9 +2,11 @@
 Styles for forms
 ===============================================*/
 
-input {
+input, textarea {
 	display: block;
     width: 100%;
+    margin-top: $quarter-spacing-unit;
+    margin-bottom: $half-spacing-unit;
     padding: 12px 8px;
     background: #FFFFFF;
     border: 1px solid;
@@ -13,4 +15,16 @@ input {
     outline: 0;
     transition: all 0.3s ease-in-out;
     font-size: 1.25em;
+}
+
+textarea {
+    height: 248px;
+    resize: none;
+}
+
+label {
+   font-weight: $semi-bold;
+      @include media(medium) {
+        font-size: 20px;
+      }
 }

@@ -10,11 +10,10 @@ Navigation
       margin-top: 5px;
     }
      @include media(large) {
-      margin-top: 24px;
+      font-size: 20px;
+      margin-top: 19px;
     }
-     @include media(xlarge) {
-      font-size: 18px;
-    }
+
   ul {
       display: flex;
       flex-direction: row;

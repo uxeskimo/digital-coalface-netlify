@@ -9,16 +9,17 @@
 	margin: auto;
 }
 
+header {
+    background: #9ec8d2;
+    height: 66px;
+
+	@include media(large) {
+    	height: 106px;
+	}
+}
+
 main {
-	padding-right: $quarter-spacing-unit;
-	padding-left: $quarter-spacing-unit;
 	margin-bottom: $base-spacing-unit;
-
-
-	  @include media(large) {
-	   	padding-right: $half-spacing-unit;
-		padding-left: $half-spacing-unit;
-	   }
 
 	   .main-content {
 		  display: flex;

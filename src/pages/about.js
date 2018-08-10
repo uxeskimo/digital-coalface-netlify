@@ -12,7 +12,7 @@ const About = ({ data }) => (
 
           <div className="row">
 
-            <div className="column medium-6">
+            <div className="column medium-8">
 
             <h1>About</h1>
 

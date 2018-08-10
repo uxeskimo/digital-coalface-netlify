@@ -1,13 +1,11 @@
 // Home page styles
 
-header {
-	padding-right: $quarter-spacing-unit;
-	padding-left: $quarter-spacing-unit;
+.home-header {
+	height: auto;
+	background: transparent;
+}
 
-	   @include media(large) {
-	   	padding-right: $half-spacing-unit;
-		padding-left: $half-spacing-unit;
-	   }
+header {
 
   .top-content {
 	display: flex;
@@ -28,4 +26,11 @@ h3 a {
 
 .home {
 	margin-bottom: 0;
+}
+
+.home-heading {
+	font-weight: $headline;
+	    @include media(large) {
+	    	font-size: 59px;
+	    }
 }

@@ -5,5 +5,22 @@ Responsive helpers
 @import "helpers";
 
 @mixin respond-classes($size) {
-
+  .#{$size}-hidden {
+    @include visuallyhidden;
+  }
+  .#{$size}-shown {
+    @include visuallyshown;
+  }
+  .#{$size}-clear {
+    @include clear;
+  }
+  .#{$size}-clear-none {
+    @include clear-none;
+  }
+  .#{$size}-clear-left {
+    @include clear-left;
+  }
+  .#{$size}-clear-right {
+    @include clear-right;
+  }
 }

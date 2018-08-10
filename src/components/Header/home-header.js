@@ -27,7 +27,7 @@ export default class Header extends Component {
   render() {
     return (
      <HeaderWrapper>
-          <header>
+          <header className="home-header">
           <div className="wrap">
             <div className="top-content">
               <div className="logo">
@@ -47,7 +47,7 @@ export default class Header extends Component {
                   </ul>
                 </nav>
              </div>
-            <h1>Podcasts about the people from the frontline in digital</h1>
+            <h1 className="home-heading">Podcasts about the people from the frontline in digital</h1>
             <p>Getting to the <strong>heart</strong> of digital</p>
 
             <img src={hero} className="hero" alt="Digital Coalface - Lee Murray" />
