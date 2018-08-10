@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
-import Header from "../components/Header";
+import PostListing from "../components/Posts/PostListing";
+import Header from "../components/Header/index";
 import Footer from "../components/Footer/simple-footer.js";
+import episodeThumb from "../images/video-pic.png";
 
 const Podcasts = ({ data }) => (
   <div>
@@ -12,9 +14,27 @@ const Podcasts = ({ data }) => (
 
           <div className="row">
 
-            <div className="column medium-6">
+            <div className="column episodes">
 
             <h1>Podcasts</h1>
+
+             <div className="row">
+
+               <div className="column medium-3">
+                  <Link to="/">
+                     <img src={episodeThumb} alt="Episode 1" />
+                  </Link>
+              </div>
+
+              <div className="column medium-9">
+
+                  {data.allContentfulBlogPost.edges.map(({ node }) => (
+                  <PostListing key={node.id} post={node} />))}
+
+              </div>
+
+              </div>
+
 
 
 
@@ -28,3 +48,32 @@ const Podcasts = ({ data }) => (
 );
 
 export default Podcasts;
+
+export const query = graphql`
+  query SiteMetaTwo {
+    site {
+      siteMetadata {
+        title
+        desc
+      }
+    }
+    allContentfulBlogPost {
+      edges {
+        node {
+          title
+          textSnippet
+          body {
+            childMarkdownRemark {
+              excerpt
+            }
+          }
+          createdAt(formatString: "MMMM DD, YYYY")
+          slug
+          id
+          textSnippet
+        }
+      }
+    }
+  }
+`;
+

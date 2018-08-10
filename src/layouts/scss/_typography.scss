@@ -38,19 +38,15 @@ h1 {
 h2 {
     color: $blue;
     font-weight: $headline;
-    font-size: 22px;
-      @include media(large) {
+    font-size: 32px;
 
-      }
 }
 
 h3 {
   color: $blue;
   font-weight: $headline;
-  font-size: 18px;
-    @include media(large) {
+  font-size: 20px;
 
-  }
 }
 
 p {

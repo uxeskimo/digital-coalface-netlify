@@ -18,13 +18,13 @@ const About = ({ data }) => (
 
             <p>The Digital Coalface’s main aim is to help people working in digital improve themselves by discussing important topics within the industry and providing useful resources.</p>
 
-            <p>Working in digital in 2018 is more challenging than ever, with this in mind I wanted to create something that would help colleagues in their day to day jobs even if its just point discussed or a resource link shared.</p>
+            <p>Working in digital in 2018 is more challenging than ever, with this in mind I wanted to create something that would help colleagues in their day to day jobs even if its just a point discussed or a resource link shared.</p>
 
-            <p>I also wanted to try to improve myself, push out of my comfort zone, speaking on a podcast was high on the list of things that would make me uncomfatable.</p>
+            <p>I also wanted to try to improve myself, push out of my comfort zone, speaking on a podcast was high on the list of things that would make me uncomfortable.</p>
 
             <p>I hope you can bear with me on the podcasts, I’m hoping at some point I will find my voice but please send any feedback you may have on how we could improve the format to uxeskimo@gmail.com</p>
 
-            <p>Lee is a Manchester based interaction designer with over 17 years commercial experience and is currently helping coop digital improve their digital offerings.</p>
+            <p>I'm a Manchester based interaction designer with over 17 years commercial experience and is currently helping coop digital improve their digital offerings.</p>
 
 
             </div>

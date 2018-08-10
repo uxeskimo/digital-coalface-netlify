@@ -4,20 +4,19 @@
 	display: block;
 	background-color: $green;
 	color: $white;
+	font-weight: $semi-bold;
 	padding: $quarter-spacing-unit;
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
 	border: none;
-	@include media(medium) {
-	   width: 50%;
-	}
-
-	@include media(large) {
-	   width: 35%;
-	}
+	  @include media(large) {
+	  	padding: 24px;
+	  }
 }
+
+
 
 
 

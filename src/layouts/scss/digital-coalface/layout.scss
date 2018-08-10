@@ -27,14 +27,17 @@ main {
 		  padding-top: $half-spacing-unit;
 	   }
 
-	h2 {
-		color: $white;
-	}
 	a {
-		color: $white;
+		color: $blue;
 	}
 	p {
 		color: $blue;
 	}
 }
 
+.margin-bh {
+	margin-bottom: $quarter-spacing-unit;
+		@include media(medium) {
+		    margin-bottom: 0;
+		}
+}
