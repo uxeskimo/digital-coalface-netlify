@@ -50,7 +50,7 @@ const About = ({ data }) => (
             </label>
           </p>
           <p>
-            <button type="submit">Send</button>
+            <button type="submit" className="btn">Send</button>
           </p>
         </form>
 
