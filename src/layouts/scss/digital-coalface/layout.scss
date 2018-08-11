@@ -11,7 +11,7 @@
 
 header {
     background: #9ec8d2;
-    height: 66px;
+    min-height: 66px;
 
 	@include media(large) {
     	height: 106px;

@@ -9,13 +9,13 @@ export default class Footer extends Component {
       <div className="wrap">
         <div className="bottom-content">
 
-                <h2>Social</h2>
+                <h3>Social</h3>
 
                 <nav>
                     <ul>
-                      <li><Link to="/">Twitter</Link></li>
-              			  <li><Link to="/">Facebook</Link></li>
-              		    <li><Link to="/">Vimeo</Link></li>
+                      <li><Link to="https://twitter.com/Digi_Coalface">Twitter</Link></li>
+              			  <li><Link to="https://www.facebook.com/thedigitalcoalface/">Facebook</Link></li>
+              		    <li><Link to="https://vimeo.com/user79970144">Vimeo</Link></li>
                     </ul>
                 </nav>
             </div>

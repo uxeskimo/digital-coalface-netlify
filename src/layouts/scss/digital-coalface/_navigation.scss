@@ -5,25 +5,22 @@ Navigation
   margin-top: 22px;
 }
 .mobile-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  background: #46af80;
-  min-height: 100vh;
-  z-index: 9;
+  left: -135px;
+  z-index: 9999999999999;
   ul {
-    margin-top: $base-spacing-unit;
+    margin-top: $half-spacing-unit;
     list-style: none;
     padding-left: $quarter-spacing-unit;
     li {
-        padding: $quarter-spacing-unit 0;
+        padding: $eighth-spacing-unit 0;
+        width: 100%;
        a {
-        color: $white;
-        padding: $quarter-spacing-unit 0;
+        color: #46af80;
         font-weight: 600;
         text-decoration: none;
-        font-size: 35px;
+        font-size: 24px;
        }
     }
   }
