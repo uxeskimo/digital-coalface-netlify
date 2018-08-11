@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => (
               <div className="row">
 
                <div className="column medium-2">
-                  <Link to="1-design-ethics-with-phil-hesketh">
+                  <Link to="/1-design-ethics-with-phil-hesketh">
                      <img src={episodeThumb} alt="Episode 1" />
                   </Link>
               </div>

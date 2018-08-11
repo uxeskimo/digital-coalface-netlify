@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 
 export default class Toggle extends Component {
+  static defaultProps = {
+    initial: false
+  };
+
   state = {
-    on: false
+    on: this.props.initial
   };
 
   toggle = () => {
@@ -12,14 +16,7 @@ export default class Toggle extends Component {
   };
 
   render() {
-    const { render } = this.props;
-    return (
-      <div>
-        {render({
-          on: this.state.on,
-          toggle: this.toggle
-        })}
-      </div>
-    );
+    const { children } = this.props;
+    return children({ ...this.state, toggle: this.toggle });
   }
 }

@@ -30,10 +30,3 @@ h2 a {
 	    	font-size: 59px;
 	    }
 }
-
-.home img {
-		margin-bottom: $half-spacing-unit;
-		  @include media(medium) {
-	    	margin-bottom: 0;
-	    }
-}

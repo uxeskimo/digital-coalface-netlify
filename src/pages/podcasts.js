@@ -21,7 +21,7 @@ const Podcasts = ({ data }) => (
              <div className="row">
 
                <div className="column medium-3">
-                  <Link to="/">
+                  <Link to="/1-design-ethics-with-phil-hesketh">
                      <img src={episodeThumb} alt="Episode 1" />
                   </Link>
               </div>
