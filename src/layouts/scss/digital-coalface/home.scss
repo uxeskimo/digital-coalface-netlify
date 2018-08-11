@@ -3,6 +3,10 @@
 .home-header {
 	height: auto;
 	background: transparent;
+		.video-wrap {
+	    margin-top: $half-spacing-unit;
+	    padding-top: 25px;
+	}
 }
 
 header {
@@ -13,18 +17,11 @@ header {
   }
 }
 
-h3 a {
+h2 a {
 	text-decoration: none;
 		 @include media(large) {
 		    font-size: 24px;
 		 }
-}
-
-.hero {
-	margin: 48px 0 $half-spacing-unit 0;
-	 @include media(large) {
-	 	margin-top: 70px;
-	 }
 }
 
 .home-heading {
@@ -34,8 +31,9 @@ h3 a {
 	    }
 }
 
-.episodes {
-	h3 {
-		margin-top: 0;
-	}
+.home img {
+		margin-bottom: $half-spacing-unit;
+		  @include media(medium) {
+	    	margin-bottom: 0;
+	    }
 }

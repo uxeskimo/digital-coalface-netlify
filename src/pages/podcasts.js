@@ -4,7 +4,7 @@ import styled from "styled-components";
 import PostListing from "../components/Posts/PostListing";
 import Header from "../components/Header/index";
 import Footer from "../components/Footer/simple-footer.js";
-import episodeThumb from "../images/video-pic.png";
+import episodeThumb from "../images/episode-1.jpg";
 
 const Podcasts = ({ data }) => (
   <div>
@@ -34,10 +34,6 @@ const Podcasts = ({ data }) => (
               </div>
 
               </div>
-
-
-
-
 
             </div>
       </div>

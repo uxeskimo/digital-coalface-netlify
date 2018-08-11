@@ -1,12 +1,10 @@
 .video-wrap {
 	position: relative;
-	margin-top: $half-spacing-unit;
 	margin-bottom: $quarter-spacing-unit;
 	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
 	height: 0;
 }
-.video-wrap iframe {
+.video-wrap iframe, .video-wrap object, .video-wrap embed {
 	position: absolute;
 	top: 0;
 	left: 0;

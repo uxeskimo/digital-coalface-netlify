@@ -19,7 +19,11 @@ header {
 }
 
 main {
-	margin-bottom: $base-spacing-unit;
+	margin-bottom: $half-spacing-unit;
+
+	@include media(xlarge) {
+		margin-bottom: $base-spacing-unit;
+	}
 
 	   .main-content {
 		  display: flex;

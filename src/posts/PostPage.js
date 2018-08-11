@@ -8,16 +8,23 @@ export default class PostPage extends Component {
     const { data } = this.props;
     if (!data) return null;
     return (
-    <div>
+    <div className="page-wrap">
       <DefaultHeader data={data} />
       <main>
-        <div className="wrap">
-          <span>{data.contentfulBlogPost.date}</span>
-          <h1>{data.contentfulBlogPost.title}</h1>
-          <div dangerouslySetInnerHTML={{
-                  __html: data.contentfulBlogPost.body.childMarkdownRemark.html
-            }} />
+         <div className="video-wrap">
+                <iframe src="https://player.vimeo.com/video/277845977" frameborder="0" allowfullscreen></iframe>
             </div>
+        <div className="wrap">
+        <div className="row">
+          <div className="column large-8">
+          <span>{data.contentfulBlogPost.date}</span>
+           <h1>{data.contentfulBlogPost.title}</h1>
+            <div dangerouslySetInnerHTML={{
+                    __html: data.contentfulBlogPost.body.childMarkdownRemark.html
+              }} />
+              </div>
+            </div>
+          </div>
       </main>
        <Footer data={data} />
       </div>

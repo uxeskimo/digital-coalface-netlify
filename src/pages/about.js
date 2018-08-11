@@ -3,16 +3,18 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer/simple-footer.js";
+import PageHero from "../images/about-digital-coalface.jpg";
 
 const About = ({ data }) => (
   <div>
   <Header data={data} />
   <main>
+  <img src={PageHero} alt="Podcast equipment" />
     <div className="wrap">
 
           <div className="row">
 
-            <div className="column medium-8">
+            <div className="column large-8">
 
             <h1>About</h1>
 
@@ -24,7 +26,7 @@ const About = ({ data }) => (
 
             <p>I hope you can bear with me on the podcasts, I’m hoping at some point I will find my voice but please send any feedback you may have on how we could improve the format to uxeskimo@gmail.com</p>
 
-            <p>I'm a Manchester based interaction designer with over 17 years commercial experience and is currently helping coop digital improve their digital offerings.</p>
+            <p>I'm a Manchester based interaction designer with over 17 years commercial experience and am currently helping coop digital improve their digital offerings.</p>
 
 
             </div>

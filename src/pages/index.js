@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import PostListing from "../components/Posts/PostListing";
 import Header from "../components/Header/home-header.js";
-import episodeThumb from "../images/video-pic.png";
+import episodeThumb from "../images/episode-1.jpg";
 import Footer from "../components/Footer";
 
 const IndexPage = ({ data }) => (
@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => (
               <div className="row">
 
                <div className="column medium-2">
-                  <Link to="/">
+                  <Link to="1-design-ethics-with-phil-hesketh">
                      <img src={episodeThumb} alt="Episode 1" />
                   </Link>
               </div>
