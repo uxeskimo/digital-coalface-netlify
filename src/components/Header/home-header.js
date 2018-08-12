@@ -9,7 +9,7 @@ import logo from "../../images/dc-logo.svg";
 import menu from "../../images/mobile-menu.svg";
 
 const HeaderWrapper = styled.div`
-  background-image: linear-gradient(0deg, #E1F6E9 0%, #99C6D3 100%, #D8D8D8 100%);
+  background-image: linear-gradient(0deg, #E6FAEE 0%, #9CC6D1 100%, #D1D1D1 100%);
 `;
 
 export default class Header extends Component {
@@ -50,7 +50,7 @@ export default class Header extends Component {
               </div>
 
                 <div className="column medium-6">
-                   <Link to="/talk" className="btn blue-bg">
+                   <Link to="/talk" className="btn white-bg">
                      Talk on the digital coalface
                   </Link>
               </div>
