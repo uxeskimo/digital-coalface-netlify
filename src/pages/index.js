@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import PostListing from "../components/Posts/PostListing";
 import Header from "../components/Header/home-header.js";
-import episodeThumb from "../images/episode-1.jpg";
+import Img from 'gatsby-image';
 import Footer from "../components/Footer";
 
 const IndexPage = ({ data }) => (
@@ -17,13 +17,13 @@ const IndexPage = ({ data }) => (
 
               <div className="row">
 
-               <div className="column medium-2">
+               <div className="column medium-3 large-3">
                   <Link to="/1-design-ethics-with-phil-hesketh">
-                     <img src={episodeThumb} alt="Episode 1" />
+                        <Img sizes={data.background.sizes} />
                   </Link>
               </div>
 
-              <div className="column medium-10">
+              <div className="column medium-9 large-7 home-episode">
 
                   {data.allContentfulBlogPost.edges.map(({ node }) => (
                   <PostListing key={node.id} post={node} />))}
@@ -47,6 +47,11 @@ export const query = graphql`
         title
         desc
       }
+    }
+        background: imageSharp(id: {regex: "/episode-1.jpg/"}) {
+        sizes(maxWidth: 400) {
+          ...GatsbyImageSharpSizes
+        }
     }
     allContentfulBlogPost {
       edges {

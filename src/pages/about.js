@@ -3,13 +3,13 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer/";
-import PageHero from "../images/about-digital-coalface.jpg";
+import Img from 'gatsby-image';
 
 const About = ({ data }) => (
   <div>
   <Header data={data} />
   <main>
-  <img src={PageHero} alt="Podcast equipment" />
+  <Img sizes={data.background.sizes} />
     <div className="wrap">
 
           <div className="row">
@@ -24,7 +24,7 @@ const About = ({ data }) => (
 
             <p>I also wanted to try to improve myself, push out of my comfort zone, speaking on a podcast was high on the list of things that would make me uncomfortable.</p>
 
-            <p>I hope you can bear with me on the podcasts, I’m hoping at some point I will find my voice but please send any feedback you may have on how we could improve the format to <a href="mailto:uxeskimo@gmail.com">uxeskimo@gmail.com</a>.</p>
+            <p>I hope you can bear with me on the podcasts, I’m hoping at some point I will find my voice but please send any feedback you may have on how we could improve the format to <a href="mailto:thedigitalcoalface@gmail.com">thedigitalcoalface@gmail.com</a>.</p>
 
             <p>I'm a Manchester based interaction designer with over 17 years commercial experience and am currently helping coop digital improve their digital offerings.</p>
 
@@ -37,3 +37,19 @@ const About = ({ data }) => (
 );
 
 export default About;
+
+export const query = graphql`
+  query LayoutQueryImg {
+    site {
+      siteMetadata {
+        title
+        desc
+      }
+    }
+    background: imageSharp(id: {regex: "/about-digital-coalface.jpg/"}) {
+        sizes(maxWidth: 1300) {
+          ...GatsbyImageSharpSizes
+        }
+    }
+  }
+`;

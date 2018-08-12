@@ -38,6 +38,7 @@ export default class Footer extends Component {
                       <li><a href="https://twitter.com/Digi_Coalface">Twitter</a></li>
               			  <li><a href="https://www.facebook.com/thedigitalcoalface/">Facebook</a></li>
               		    <li><a href="https://vimeo.com/user79970144">Vimeo</a></li>
+                      <li><a href="https://www.instagram.com/thedigitalcoalface/">Instagram</a></li>
                     </ul>
                 </nav>
             </div>

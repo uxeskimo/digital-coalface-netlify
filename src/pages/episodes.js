@@ -4,7 +4,7 @@ import styled from "styled-components";
 import PostListing from "../components/Posts/PostListing";
 import Header from "../components/Header/index";
 import Footer from "../components/Footer/";
-import episodeThumb from "../images/episode-1.jpg";
+import Img from 'gatsby-image';
 
 const Episodes = ({ data }) => (
   <div>
@@ -22,7 +22,7 @@ const Episodes = ({ data }) => (
 
                <div className="column medium-3">
                   <Link to="/1-design-ethics-with-phil-hesketh">
-                     <img src={episodeThumb} alt="Episode 1" />
+                      <Img sizes={data.background.sizes} />
                   </Link>
               </div>
 
@@ -52,6 +52,11 @@ export const query = graphql`
         title
         desc
       }
+    }
+       background: imageSharp(id: {regex: "/episode-1.jpg/"}) {
+        sizes(maxWidth: 400) {
+          ...GatsbyImageSharpSizes
+        }
     }
     allContentfulBlogPost {
       edges {
