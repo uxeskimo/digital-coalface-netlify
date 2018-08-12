@@ -29,6 +29,9 @@ main {
 		  display: flex;
 		  flex-direction: column;
 		  padding-top: $half-spacing-unit;
+		  @include media(large) {
+		  	padding-top: $base-spacing-unit;
+		  }
 	   }
 
 	a {
@@ -36,6 +39,10 @@ main {
 	}
 	p {
 		color: $blue;
+			a {
+			color: #46af80;
+			font-weight: 600;
+		}
 	}
 }
 

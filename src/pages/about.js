@@ -24,10 +24,9 @@ const About = ({ data }) => (
 
             <p>I also wanted to try to improve myself, push out of my comfort zone, speaking on a podcast was high on the list of things that would make me uncomfortable.</p>
 
-            <p>I hope you can bear with me on the podcasts, I’m hoping at some point I will find my voice but please send any feedback you may have on how we could improve the format to uxeskimo@gmail.com</p>
+            <p>I hope you can bear with me on the podcasts, I’m hoping at some point I will find my voice but please send any feedback you may have on how we could improve the format to <a href="mailto:uxeskimo@gmail.com">uxeskimo@gmail.com</a></p>
 
             <p>I'm a Manchester based interaction designer with over 17 years commercial experience and am currently helping coop digital improve their digital offerings.</p>
-
 
             </div>
       </div>
