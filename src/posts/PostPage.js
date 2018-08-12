@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import DefaultHeader from "../components/Header";
-import Footer from "../components/Footer/simple-footer.js";
+import Footer from "../components/Footer/";
 
 export default class PostPage extends Component {
   render() {

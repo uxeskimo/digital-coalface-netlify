@@ -3,15 +3,45 @@
 footer {
 	background-color: $blue;
 	margin-top: 0;
-	padding: $quarter-spacing-unit 0 $half-spacing-unit 0;
+	padding: 50px 0;
+		@include media(large) {
+			padding: $base-spacing-unit 0;
+		}
 
 	.footer-content {
 	   display: flex;
 	   flex-direction: column;
 	}
 
-	.btn {
-		margin-bottom: 48px;
+	.sign-up {
+		display: flex;
+	}
+
+	.signup-label {
+		color: $white;
+		font-size: 20px;
+	}
+
+	.email-input {
+		max-width: 209px;
+		height: 51px;
+		margin-top: 24px;
+		margin-bottom: $quarter-spacing-unit;
+		font-size: 18px;
+		border: 0;
+		@include media(medium) {
+			max-width: 270px;
+		}
+	}
+
+	.signup-btn {
+		width: 165px;
+		padding: $quarter-spacing-unit;
+   		height: 51px;
+        margin-top: 24px;
+		@include media(medium) {
+        	width: auto;
+    	}
 	}
 
 	h2, h3 {
@@ -21,7 +51,7 @@ footer {
 		padding-left: 0;
 		list-style: none;
 		li {
-			margin-bottom: $quarter-spacing-unit
+			margin-bottom: $quarter-spacing-unit;
 		}
 	}
 	a {
@@ -29,6 +59,11 @@ footer {
 		text-decoration: none;
 	}
 	p {
+		margin-top: 0;
 		color: $white;
+		font-size: 17px;
+		  @include media(medium) {
+		  	font-size: 18px;
+		  }
 	}
 }

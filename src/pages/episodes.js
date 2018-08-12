@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import PostListing from "../components/Posts/PostListing";
 import Header from "../components/Header/index";
-import Footer from "../components/Footer/simple-footer.js";
+import Footer from "../components/Footer/";
 import episodeThumb from "../images/episode-1.jpg";
 
 const Episodes = ({ data }) => (

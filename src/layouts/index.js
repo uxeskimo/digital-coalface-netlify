@@ -8,7 +8,7 @@ import "./main.scss";
 const PageWrapper = ({ children, data, location }) => (
   <div className="main-wrap">
     <Helmet title="The Digital Coalface"
-            meta={[ { name: "description", content: "The digital coalface provides video and podcasts for interacton designers, researchers, devlopers and product people to help them become better in their work." },
+            meta={[ { name: "description", content: "The digital coalface provides videos and podcasts for interacton designers, researchers, developers and product people to help them become better in their work." },
                     { name: "keywords", content: "Digital coalface, podcast, videocast, interacton designer, UX, visual deisigner, researcher, content design, front-end developer, product owner." }
     ]}/>
 
