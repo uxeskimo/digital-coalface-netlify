@@ -7,14 +7,16 @@
 		    margin-bottom: $base-spacing-unit;
 		}
 	}
-	h2 {
-		margin-top: 0;
+	.episode-title {
+			margin-top: 0;
+		}
+	.episode-content {
+		h2  {
+			margin-top: $half-spacing-unit;
+			   @include media(medium) {
+			   	margin-top: 0;
+			   }
+		}
 	}
 
-	img {
-	    margin-bottom: $half-spacing-unit;
-		  @include media(medium) {
-	    	margin-bottom: 0;
-	    }
-	}
 }

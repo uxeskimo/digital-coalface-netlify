@@ -35,12 +35,3 @@ h2 a {
 	    	font-size: 59px;
 	    }
 }
-
-.episodes .home-episode {
-	h2  {
-		margin-top: $half-spacing-unit;
-		   @include media(medium) {
-		   	margin-top: 0;
-		   }
-	}
-}

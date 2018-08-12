@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
     <div className="wrap">
           <div className="main-content episodes">
 
-              <h2>Episodes</h2>
+              <h2 className="episode-title">Episodes</h2>
 
               <div className="row">
 
@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => (
                   </Link>
               </div>
 
-              <div className="column medium-9 large-7 home-episode">
+              <div className="column medium-9 large-7 episode-content">
 
                   {data.allContentfulBlogPost.edges.map(({ node }) => (
                   <PostListing key={node.id} post={node} />))}

@@ -26,7 +26,7 @@ const Episodes = ({ data }) => (
                   </Link>
               </div>
 
-              <div className="column medium-9">
+              <div className="column medium-9 episode-content">
 
                   {data.allContentfulBlogPost.edges.map(({ node }) => (
                   <PostListing key={node.id} post={node} />))}
