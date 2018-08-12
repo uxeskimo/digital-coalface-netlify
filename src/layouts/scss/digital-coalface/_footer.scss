@@ -23,23 +23,33 @@ footer {
 	}
 
 	.email-input {
-		max-width: 209px;
+		max-width: 160px;
+	    padding: $quarter-spacing-unit;
 		height: 51px;
 		margin-top: 24px;
 		margin-bottom: $quarter-spacing-unit;
 		font-size: 18px;
 		border: 0;
+		  @media (max-width: 359px) {
+		  	max-width:150px;
+		  }
 		@include media(medium) {
 			max-width: 270px;
 		}
+
 	}
 
 	.signup-btn {
-		width: 165px;
+		width: 195px;
 		padding: $quarter-spacing-unit;
    		height: 51px;
         margin-top: 24px;
-		@include media(medium) {
+        span {
+		  @media (max-width: 359px) {
+		 	display: none;
+		  }
+		}
+		@include media(large) {
         	width: auto;
     	}
 	}

@@ -21,7 +21,7 @@ header {
 main {
 	margin-bottom: $half-spacing-unit;
 
-	@include media(xlarge) {
+	@include media(medium) {
 		margin-bottom: $base-spacing-unit;
 	}
 

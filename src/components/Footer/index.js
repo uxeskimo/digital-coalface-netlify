@@ -22,7 +22,7 @@ export default class Footer extends Component {
 
                   <div className="sign-up">
                       <input className="email-input" type="email" name="email" placeholder="Email address" />
-                      <button type="submit" className="btn signup-btn">Get newsletter</button>
+                      <button type="submit" className="btn signup-btn">Get <span>newsletter</span></button>
                   </div>
 
                </form>
