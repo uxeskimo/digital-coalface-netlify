@@ -6,7 +6,6 @@ import Img from "gatsby-image";
 import Toggle from '../ToggleChildrenProp';
 
 import logo from "../../images/dc-logo.svg";
-import menu from "../../images/mobile-menu.svg";
 
 const HeaderWrapper = styled.div`
 `;
