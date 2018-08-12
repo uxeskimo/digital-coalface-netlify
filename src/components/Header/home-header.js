@@ -38,7 +38,7 @@ export default class Header extends Component {
             <p>Getting to the <strong>heart</strong> of digital</p>
 
             <div className="video-wrap">
-                <iframe src="https://player.vimeo.com/video/277845977" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://player.vimeo.com/video/277845977" title="Digital Coalface Introduction" width="640" height="360" frameborder="0" allowfullscreen></iframe>
             </div>
 
             <div className="row">
