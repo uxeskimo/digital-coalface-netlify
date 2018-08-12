@@ -44,7 +44,7 @@ export default class Header extends Component {
             <div className="row">
 
               <div className="column medium-6 margin-bh">
-                   <Link to="/podcasts" className="btn">
+                   <Link to="/episodes" className="btn">
                      Listen now
                    </Link>
               </div>
