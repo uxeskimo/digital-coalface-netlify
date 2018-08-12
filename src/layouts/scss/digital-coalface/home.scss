@@ -3,7 +3,11 @@
 .home-header {
 	height: auto;
 	background: transparent;
-		.video-wrap {
+	padding-bottom: 24px;
+		@include media(large) {
+		    padding-bottom: $half-spacing-unit;
+		}
+	.video-wrap {
 	    margin-top: $half-spacing-unit;
 	    padding-top: 25px;
 	}
@@ -12,6 +16,7 @@
 header {
 
   .top-content {
+  	display: inline-block;
 	display: flex;
 	justify-content: space-between;
   }

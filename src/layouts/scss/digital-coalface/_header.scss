@@ -3,11 +3,16 @@
 header {
 
 	.logo {
+     display: inline-block;
     	margin-top: 16px;
     	  img {
       		 width: 117px;
       		 height: 30.7969px;
       		 min-width: 117px;
+             @media (max-width: 359px) {
+              width: 102px;
+              min-width: 102px;
+          }
     	   }
 	   @include media(large) {
 	   	margin-top: $half-spacing-unit;

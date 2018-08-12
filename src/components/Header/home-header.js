@@ -10,18 +10,7 @@ import menu from "../../images/mobile-menu.svg";
 
 const HeaderWrapper = styled.div`
   background-image: linear-gradient(0deg, #E1F6E9 0%, #99C6D3 100%, #D8D8D8 100%);
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 32px;
-  p {
-    margin-bottom: 0;
-  }
 `;
-
-const HeaderContainer = styled.div`
-    padding-top: 8px;
-`;
-
 
 export default class Header extends Component {
   render() {
@@ -35,31 +24,15 @@ export default class Header extends Component {
                       <img src={logo} alt="Digital Coalface Logo" />
                     </Link>
               </div>
-              <Toggle>
-                {({ on, toggle }) => (
-                  <div className="toggle-wrap">
-                    <Link onClick={toggle} className="mobile-menu-toggle">
-                       <img src={menu} alt="Menu" />
-                    </Link>
-                    {on && <nav className="mobile-nav">
-                      <ul>
-                        <li><Link to="/episodes">Episodes</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/talk">Talk on the digital coalface</Link></li>
-                      </ul>
-                     </nav>}
-                  </div>
-                )}
-             </Toggle>
-
 
                 <nav className="primary-nav">
                   <ul>
                     <li><Link to="/episodes">Episodes</Link></li>
                     <li><Link to="/about">About</Link></li>
-                    <li><Link to="/talk">Talk on the digital coalface</Link></li>
+                    <li><Link to="/talk">Talk <span>on the digital coalface</span></Link></li>
                   </ul>
                 </nav>
+
              </div>
             <h1 className="home-heading">Podcasts about the people from the frontline in digital</h1>
             <p>Getting to the <strong>heart</strong> of digital</p>
