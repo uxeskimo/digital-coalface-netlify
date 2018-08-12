@@ -19,9 +19,8 @@ export default class Footer extends Component {
 
                 <input type="hidden" value="1" name="embed" />
                 <label className="signup-label" for="email-address">Get to the heart of the coalface</label>
-
                   <div className="sign-up">
-                      <input className="email-input" type="email" name="email" placeholder="Email address" />
+                      <input className="email-input" type="email" name="email-address" placeholder="Email address" />
                       <button type="submit" className="btn signup-btn">Get <span>newsletter</span></button>
                   </div>
 
