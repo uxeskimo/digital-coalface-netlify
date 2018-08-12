@@ -6,7 +6,7 @@ import Header from "../components/Header/index";
 import Footer from "../components/Footer/simple-footer.js";
 import episodeThumb from "../images/episode-1.jpg";
 
-const Podcasts = ({ data }) => (
+const Episodes = ({ data }) => (
   <div>
   <Header data={data} />
   <main>
@@ -16,7 +16,7 @@ const Podcasts = ({ data }) => (
 
             <div className="column episodes">
 
-            <h1>Podcasts</h1>
+            <h1>Episodes</h1>
 
              <div className="row">
 
@@ -43,7 +43,7 @@ const Podcasts = ({ data }) => (
   </div>
 );
 
-export default Podcasts;
+export default Episodes;
 
 export const query = graphql`
   query SiteMetaTwo {

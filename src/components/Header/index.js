@@ -9,18 +9,7 @@ import logo from "../../images/dc-logo.svg";
 import menu from "../../images/mobile-menu.svg";
 
 const HeaderWrapper = styled.div`
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 32px;
-  p {
-    margin-bottom: 0;
-  }
 `;
-
-const HeaderContainer = styled.div`
-    padding-top: 8px;
-`;
-
 
 export default class Header extends Component {
   render() {
@@ -43,7 +32,7 @@ export default class Header extends Component {
                     </Link>
                     {on && <nav className="mobile-nav">
                       <ul>
-                        <li><Link to="/podcasts">Podcasts</Link></li>
+                        <li><Link to="/episodes">Episodes</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/talk">Talk on the digital coalface</Link></li>
                       </ul>
@@ -54,7 +43,7 @@ export default class Header extends Component {
 
             <nav className="primary-nav">
                <ul>
-                  <li><Link to="/podcasts">Podcasts</Link></li>
+                  <li><Link to="/episodes">Episodes</Link></li>
                   <li><Link to="/about">About</Link></li>
                   <li><Link to="/talk">Talk on the digital coalface</Link></li>
                </ul>
