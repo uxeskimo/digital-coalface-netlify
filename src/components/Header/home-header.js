@@ -34,11 +34,11 @@ export default class Header extends Component {
                 </nav>
 
              </div>
-            <h1 className="home-heading">Podcasts about the people from the frontline in digital</h1>
+            <h1 className="home-heading">Video and podcasts about the people from the frontline in digital</h1>
             <p>Getting to the <strong>heart</strong> of digital</p>
 
             <div className="video-wrap">
-                <iframe src="https://player.vimeo.com/video/277845977" title="Digital Coalface Introduction" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://player.vimeo.com/video/284757167" title="Digital Coalface Introduction" width="640" height="360" frameborder="0" allowfullscreen></iframe>
             </div>
 
             <div className="row">

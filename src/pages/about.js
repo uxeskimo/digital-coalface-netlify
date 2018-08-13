@@ -22,7 +22,7 @@ const About = ({ data }) => (
 
             <p>I created the digital coalface with the aim to help people working in digital improve themselves by discussing important topics within the industry and providing useful resources.</p>
 
-            <p>Working in digital in 2018 is more challenging than ever, with this in mind I wanted to create something that would help colleagues in their day to day jobs even if its just a point discussed or a resource link shared.</p>
+            <p>Working in digital in 2018 is more challenging than ever, with this in mind I wanted to create something that would help colleagues in their day to day jobs even if it's just a point discussed or a resource link shared.</p>
 
             <p>I also wanted to try to improve myself, push out of my comfort zone, speaking on a podcast was high on the list of things that would make me uncomfortable.</p>
 
@@ -51,7 +51,7 @@ export const query = graphql`
       }
     }
     background: imageSharp(id: {regex: "/about-digital-coalface.jpg/"}) {
-        sizes(maxWidth: 1300) {
+        sizes(maxWidth: 1440) {
           ...GatsbyImageSharpSizes
         }
     }
