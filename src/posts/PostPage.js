@@ -10,7 +10,7 @@ export default class PostPage extends Component {
     return (
     <div className="page-wrap">
       <DefaultHeader data={data} />
-      <main>
+      <main className="video-cast">
       <div className="video">
          <div className="video-wrap">
              <iframe src="https://player.vimeo.com/video/284707647" width="640" height="180" frameborder="0" allowfullscreen></iframe>
