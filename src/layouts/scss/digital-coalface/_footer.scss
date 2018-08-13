@@ -49,8 +49,9 @@ footer {
 		 	display: none;
 		  }
 		}
-		@include media(large) {
-        	width: auto;
+		@include media(medium) {
+			width: auto;
+        	padding: $quarter-spacing-unit;
     	}
 	}
 
