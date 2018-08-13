@@ -23,7 +23,7 @@ footer {
 	}
 
 	.email-input {
-		max-width: 160px;
+		max-width: 180px;
 	    padding: $quarter-spacing-unit;
 		height: 51px;
 		margin-top: 24px;
@@ -31,7 +31,7 @@ footer {
 		font-size: 18px;
 		border: 0;
 		  @media (max-width: 359px) {
-		  	max-width:150px;
+		  	max-width:170px;
 		  }
 		@include media(medium) {
 			max-width: 270px;
@@ -40,8 +40,8 @@ footer {
 	}
 
 	.signup-btn {
-		width: 195px;
-		padding: $quarter-spacing-unit;
+		width: 146px;
+		padding: $quarter-spacing-unit $eighth-spacing-unit;
    		height: 51px;
         margin-top: 24px;
         span {
