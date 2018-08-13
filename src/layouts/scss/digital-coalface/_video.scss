@@ -1,3 +1,10 @@
+.video {
+	.video-wrap iframe {
+		background: #000;
+	}
+}
+
+
 .video-wrap {
 	position: relative;
 	margin-bottom: $quarter-spacing-unit;
@@ -12,3 +19,5 @@
 	height: 100%;
 	border: 0;
 }
+
+

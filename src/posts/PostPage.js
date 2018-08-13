@@ -11,19 +11,26 @@ export default class PostPage extends Component {
     <div className="page-wrap">
       <DefaultHeader data={data} />
       <main>
+      <div className="video">
          <div className="video-wrap">
-                <iframe src="https://player.vimeo.com/video/277845977" frameborder="0" allowfullscreen></iframe>
+             <iframe src="https://player.vimeo.com/video/284707647" width="640" height="180" frameborder="0" allowfullscreen></iframe>
             </div>
+      </div>
         <div className="wrap">
         <div className="row">
-          <div className="column large-8">
+          <div className="column">
           <span>{data.contentfulBlogPost.date}</span>
            <h1>{data.contentfulBlogPost.title}</h1>
+
+           <div className="row">
+            <div className="column large-7">
             <div dangerouslySetInnerHTML={{
                     __html: data.contentfulBlogPost.body.childMarkdownRemark.html
               }} />
               </div>
+              </div>
             </div>
+          </div>
           </div>
       </main>
        <Footer data={data} />
