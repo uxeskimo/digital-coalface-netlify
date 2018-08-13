@@ -34,7 +34,7 @@ export default class Header extends Component {
                 </nav>
 
              </div>
-            <h1 className="home-heading">Video and podcasts about the people from the frontline in digital</h1>
+            <h1 className="home-heading">Video and podcasts with the people from the frontline in digital</h1>
             <p>Getting to the <strong>heart</strong> of digital</p>
 
             <div className="video-wrap">
