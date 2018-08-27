@@ -5,11 +5,14 @@
 	background: transparent;
 	padding-bottom: 24px;
 		@include media(large) {
-		    padding-bottom: $half-spacing-unit;
+		    padding-bottom: $base-spacing-unit;
 		}
 	.video-wrap {
 	    margin-top: $half-spacing-unit;
 	    padding-top: 25px;
+	      @include media(large) {
+	      	margin-bottom: 40px;
+	      }
 	}
 }
 

@@ -18,14 +18,14 @@ export default class Footer extends Component {
               <form name="newsletter-form" action="https://tinyletter.com/thedigitalcoalface" method="post">
 
                 <input type="hidden" value="1" name="embed" />
-                <label className="signup-label" for="email-address">Get to the heart of the coalface</label>
+                <label className="signup-label" for="email-address">Get the digital coalface newsletter</label>
                   <div className="sign-up">
                       <input className="email-input" type="email" name="email-address" placeholder="Email address" />
                       <button type="submit" className="btn signup-btn">Get <span>newsletter</span></button>
                   </div>
 
                </form>
-               <p>Every 3 weeks, get exclusive advice and tips from people at the heart of digital.</p>
+               <p>Every 3 weeks, get exclusive advice and tips and interviews.</p>
                 </div>
              </div>
             </div>

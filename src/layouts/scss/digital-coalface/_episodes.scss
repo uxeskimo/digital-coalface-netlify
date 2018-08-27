@@ -23,7 +23,10 @@
 
 .video-cast {
 	h3 {
-		margin-top: $base-spacing-unit;
+		margin-top: $half-spacing-unit;
 		font-size: 22px;
+		   @include media(medium) {
+		   		margin-top: $base-spacing-unit;
+		   }
 	}
 }

@@ -75,6 +75,7 @@ footer {
 		font-size: 17px;
 		  @include media(medium) {
 		  	font-size: 18px;
+		  	margin-top: $eighth-spacing-unit;
 		  }
 	}
 }
