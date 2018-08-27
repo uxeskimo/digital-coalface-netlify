@@ -26,8 +26,6 @@ export default class PostPage extends Component {
 
            <div className="row">
             <div className="column large-7">
-            <h2>Listen to podcast audio</h2>
-             <iframe src="http://www.buzzsprout.com/203939/785496-the-digital-coalface-design-ethics?client_source=buzzsprout_site&amp;iframe=true" width="100%" height="73" frameborder="0"></iframe>
 
             <div dangerouslySetInnerHTML={{
                     __html: data.contentfulBlogPost.body.childMarkdownRemark.html
