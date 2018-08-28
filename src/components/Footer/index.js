@@ -25,7 +25,7 @@ export default class Footer extends Component {
                   </div>
 
                </form>
-               <p>Every 3 weeks, get exclusive advice and tips and interviews.</p>
+               <p>I will share my learnings as a designer and my journey with the digital coalface.</p>
                 </div>
              </div>
             </div>
