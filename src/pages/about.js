@@ -51,7 +51,7 @@ export const query = graphql`
       }
     }
     background: imageSharp(id: {regex: "/about-digital-coalface.jpg/"}) {
-        sizes(maxWidth: 1440) {
+        sizes(quality: 100) {
           ...GatsbyImageSharpSizes
         }
     }
